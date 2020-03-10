@@ -10,6 +10,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 
 public class ApiGitHubTests {
 
+
     private String baseGithubApi = "https://api.github.com";
     private String users = "/users";
     private String userName = "/Mike4Z";
