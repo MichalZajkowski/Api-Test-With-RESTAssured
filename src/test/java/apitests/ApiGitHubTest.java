@@ -3,24 +3,24 @@ package apitests;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 import org.hamcrest.Matchers;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-public class ApiGitHubTests {
+public class ApiGitHubTest {
 
-    private String baseGithubApi = "https://api.github.com";
-    private String users = "/users";
-    private String userName = "/Mike4Z";
-    private String repositories = "/repositories";
-    private String idOfExampleRepo = "/210621694";
-    private String BASEREQBINAPI = "https://reqbin.com";
-    private String ECHO = "/echo";
-    private String POST = "/post";
-    private String PUT = "/put";
-    private String JSON = "/json";
-    private String SAMPLE = "/sample";
+    private final String baseGithubApi = "https://api.github.com";
+    private final String users = "/users";
+    private final String userName = "/Mike4Z";
+    private final String repositories = "/repositories";
+    private final String idOfExampleRepo = "/210621694";
+    private final String BASEREQBINAPI = "https://reqbin.com";
+    private final String ECHO = "/echo";
+    private final String POST = "/post";
+    private final String PUT = "/put";
+    private final String JSON = "/json";
+    private final String SAMPLE = "/sample";
 
     @Test
     public void testGitHubIsWorkingAndStatusCodeIs200() {
