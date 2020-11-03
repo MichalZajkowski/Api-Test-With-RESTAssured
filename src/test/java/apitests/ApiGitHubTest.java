@@ -12,7 +12,7 @@ public class ApiGitHubTest {
 
     private final String baseGithubApi = "https://api.github.com";
     private final String users = "/users";
-    private final String userName = "/Mike4Z";
+    private final String userName = "/MichalZajkowski";
     private final String repositories = "/repositories";
     private final String idOfExampleRepo = "/210621694";
     private final String BASEREQBINAPI = "https://reqbin.com";
@@ -36,7 +36,7 @@ public class ApiGitHubTest {
                 .get(baseGithubApi + repositories + idOfExampleRepo)
                 .then()
                 .body("id", Matchers.is(Integer.TYPE))
-                .body("owner.login", equalTo("Mike4Z"))
+                .body("owner.login", equalTo("MichalZajkowski"))
                 .body("owner.type", equalTo("User"))
                 .body("forks", Matchers.is(Integer.TYPE))
                 .body("fork", Matchers.is(Boolean.TYPE))
